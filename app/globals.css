@@ -23,6 +23,12 @@
   .content {
     @apply text-white font-medium
   }
+  .double-grid {
+    @apply grid grid-cols-1 md:grid-cols-2
+  }
+  .container {
+    @apply max-w-6xl mx-auto
+  }
 }
 
 .embla {
