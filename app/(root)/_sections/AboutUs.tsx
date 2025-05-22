@@ -3,12 +3,12 @@ import Image from "next/image"
 const AboutUs = () => {
   return (
     <section id="about-us" className="bg-mint-green mt-10">
-      <div className="container double-grid ">
+      <div className="container !max-w-4xl double-grid ">
         <article className="flex flex-col p-12 items-center">
           <h2 className="heading !font-medium mb-8">
             ¿Quiénes <strong className="font-extrabold">somos?</strong>
           </h2>
-          <p className="content">
+          <p className="content !font-light">
             Somos una compañía de arquitectura con más de 10 años en el mercado, transformamos el presente a través de arquitectura inteligente, fusionando innovación, tecnología y sostenibilidad.
             Creamos espacios que mejoran la calidad de vida de las personas y promueven el cuidado del planeta.
           </p>
