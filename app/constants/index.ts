@@ -128,3 +128,18 @@ export const SERVICES = [
     icon: "/services/services-6.svg",
   },
 ];
+
+export const PROJECTS = [
+  {
+    title: "Parroquia Jesucristo Redentor",
+    imageUrl: "/projects/parroquia.webp",
+  },
+  {
+    title: "Deloing Zona Franca",
+    imageUrl: "/projects/deloing.webp",
+  },
+  {
+    title: "Diverplaza",
+    imageUrl: "/projects/diverplaza.webp",
+  },
+];
