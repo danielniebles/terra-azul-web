@@ -5,6 +5,13 @@ type ValueItem = {
   imageUrl: string;
 };
 
+type SDGGoal = {
+  number: number;
+  title: string[];
+  color: string;
+  svgUrl: string;
+};
+
 export const DNA_VALUES: ValueItem[] = [
   {
     title: "INNOVACIÓN",
@@ -35,13 +42,6 @@ export const DNA_VALUES: ValueItem[] = [
     imageUrl: "/dna/dna_4.webp", // Replace with actual image path
   },
 ];
-
-type SDGGoal = {
-  number: number;
-  title: string[];
-  color: string;
-  svgUrl: string;
-};
 
 export const ODS_GOALS: SDGGoal[] = [
   {
@@ -99,5 +99,32 @@ export const TEAM = [
     name: "Marisol Duarte",
     position: "Consultora Comercial",
     imageUrl: "/team/marisol.webp",
+  },
+];
+
+export const SERVICES = [
+  {
+    title: "Diseño y ejecución de proyectos arquitectónicos",
+    icon: "/services/services-1.svg",
+  },
+  {
+    title: "Renovación de espacios",
+    icon: "/services/services-2.svg",
+  },
+  {
+    title: "Asesoría en normativa urbana y gestión social",
+    icon: "/services/services-3.svg",
+  },
+  {
+    title: "Automatización y domótica",
+    icon: "/services/services-4.svg",
+  },
+  {
+    title: "Impermeabilización y trabajos en altura",
+    icon: "/services/services-5.svg",
+  },
+  {
+    title: "Señalización industrial",
+    icon: "/services/services-6.svg",
   },
 ];
