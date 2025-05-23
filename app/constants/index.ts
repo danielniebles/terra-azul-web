@@ -87,3 +87,17 @@ export const ODS_GOALS: SDGGoal[] = [
     svgUrl: "/ods/ods-7.svg",
   },
 ];
+
+export const TEAM = [
+  { name: "Javier Niebles", position: "CEO", imageUrl: "/team/javier.webp" },
+  {
+    name: "Maribel Soler",
+    position: "Gerente Comercial",
+    imageUrl: "/team/maribel.webp",
+  },
+  {
+    name: "Marisol Duarte",
+    position: "Consultora Comercial",
+    imageUrl: "/team/marisol.webp",
+  },
+];
