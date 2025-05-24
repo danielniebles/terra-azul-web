@@ -143,3 +143,27 @@ export const PROJECTS = [
     imageUrl: "/projects/diverplaza.webp",
   },
 ];
+
+export const SOCIALS = [
+  {
+    name: "Tiktok",
+    icon: "/social/tiktok.svg",
+    link: "https://twitter.com/Arquitectonos",
+  },
+  {
+    name: "Instagram",
+    icon: "/social/ig.svg",
+    link: "https://www.instagram.com/arquitectonos/",
+  },
+  {
+    name: "Linkedin",
+    icon: "/social/in.svg",
+    link: "https://www.linkedin.com/company/arquitectonos/",
+  },
+  {
+    name: "Facebook",
+    icon: "/social/fb.svg",
+    link: "https://www.linkedin.com/company/arquitectonos/",
+  },
+
+]

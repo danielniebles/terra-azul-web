@@ -1,4 +1,5 @@
 import { PROJECTS } from "@/app/constants"
+import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
 const Projects = () => {
@@ -19,7 +20,7 @@ const Projects = () => {
               />
             </div>
             <span className="text-forest-green font-bold text-md">{title}</span>
-
+            <Button className="mt-4 bg-navy-blue hover:bg-navy-blue/90">Ver más</Button>
           </div>
         ))}
       </div>
