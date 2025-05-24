@@ -1,6 +1,7 @@
 import AboutUs from "./_sections/AboutUs";
 import Contact from "./_sections/Contact";
 import DNA from "./_sections/DNA";
+import HomeSlider from "./_sections/HomeSlider";
 import Projects from "./_sections/Projects";
 import Services from "./_sections/Services";
 import Sustainability from "./_sections/Sustainability";
@@ -12,6 +13,7 @@ export default function Home() {
 
   return (
     <>
+      <HomeSlider />
       <AboutUs />
       <DNA />
       <Sustainability />

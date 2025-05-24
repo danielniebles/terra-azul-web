@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="bg-mint-green mt-10">
+    <section id="about-us" className="bg-mint-green">
       <div className="container !max-w-4xl double-grid ">
         <article className="flex flex-col p-12 items-center">
           <h2 className="heading !font-medium mb-8">
