@@ -165,5 +165,25 @@ export const SOCIALS = [
     icon: "/social/fb.svg",
     link: "https://www.linkedin.com/company/arquitectonos/",
   },
+];
 
-]
+export const MENU = [
+  {
+    name: "Servicios",
+    link: "/servicios",
+  },
+  {
+    name: "Proyectos",
+    link: "/proyectos",
+  },
+  {
+    name: "Nosotros",
+    link: "/nosotros",
+  },
+  {
+    name: "Contacto",
+    link: "/contacto",
+  },
+];
+
+export const HOME_SLIDER = ["/home/slide-1.jpeg", "/home/slide-2.jpg"];

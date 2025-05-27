@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <section id="team" className="container my-16">
       <h2 className="heading !font-medium !text-forest-green text-center mb-8">
-        <strong className="font-extrabold">Nos encantará escucharte</strong><br />{" "}
+        <strong className="font-extrabold">¡Nos encantará escucharte</strong><br />{" "}
         y estar contigo en cada paso!
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-self-center gap-8">

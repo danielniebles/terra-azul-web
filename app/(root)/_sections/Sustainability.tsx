@@ -7,7 +7,7 @@ const Sustainability = () => {
       <div className="container double-grid">
         <article className="flex flex-col p-12 justify-center">
           <h2 className="heading !font-medium !text-forest-green mb-8">
-            El <strong className="font-extrabold">compromiso</strong> <br />{" "}
+            ¡El <strong className="font-extrabold">compromiso</strong> <br />{" "}
             que guía<br /><strong className="font-extrabold"> nuestra visión!</strong>
           </h2>
           <p className="text-forest-green">
