@@ -29,7 +29,7 @@ const HomeSlider = () => {
   )
 
   return (
-    <div className="embla" ref={emblaRef}>
+    <div className="embla" ref={emblaRef} id='home'>
       <div className="embla__container h-[800px]">
         {HOME_SLIDER.map((image, index) => (
           <div className="embla__slide flex-shrink-0 w-full relative" key={index}>

@@ -169,20 +169,24 @@ export const SOCIALS = [
 
 export const MENU = [
   {
-    name: "Servicios",
-    link: "/servicios",
-  },
-  {
-    name: "Proyectos",
-    link: "/proyectos",
+    name: "Inicio",
+    link: "home",
   },
   {
     name: "Nosotros",
-    link: "/nosotros",
+    link: "nosotros",
   },
   {
-    name: "Contacto",
-    link: "/contacto",
+    name: "Servicios",
+    link: "servicios",
+  },
+  {
+    name: "Proyectos",
+    link: "proyectos",
+  },
+  {
+    name: "Contáctanos",
+    link: "contactanos",
   },
 ];
 
