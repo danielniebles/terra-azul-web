@@ -49,7 +49,7 @@ const Contact = () => {
                 className="absolute bottom-0 left-0 h-[600px] w-auto -scale-x-100 object-cover overflow-visible"
               />
             </div>
-            <div className="flex flex-col gap-4 my-8">
+            <div className="flex flex-col gap-4 my-8 border-r-2 border-forest-green">
               <div className="flex items-center">
                 <Image src={"/social/at.svg"} width={30} height={30} alt="terra-email" />
                 <span className="text-forest-green ml-2">contacto@terraazul.com</span>

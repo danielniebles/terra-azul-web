@@ -10,7 +10,7 @@ export default function Navbar() {
         <ul className="flex gap-4 items-end h-full">
           {MENU.map(({ name, link }) => (
             <li key={name}>
-              <a href={`#${link}`}>{name}</a>
+              <a className="text-forest-green" href={`#${link}`}>{name}</a>
             </li>
           ))}
         </ul>
