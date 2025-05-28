@@ -3,6 +3,11 @@
 /*  ---break--- */
 @custom-variant dark (&:is(.dark *));
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
 @theme {
   --color-terra-sand: #d8cfb3;
   --color-mint-green: #769375;

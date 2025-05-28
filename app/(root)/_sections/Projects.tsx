@@ -5,7 +5,7 @@ import Image from "next/image"
 const Projects = () => {
 
   return (
-    <section id="team" className="container my-16">
+    <section id="proyectos" className="container my-16">
       <h2 className="heading !font-medium !text-forest-green text-center mb-8">
         ¿Quieres saber<br /><strong className="font-extrabold">en qué estamos trabajando?</strong><br />{" "}
         Aquí te lo contamos

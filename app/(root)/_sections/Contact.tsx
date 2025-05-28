@@ -9,7 +9,7 @@ import Link from "next/link"
 
 const Contact = () => {
   return (
-    <section className="bg-terra-sand pt-16 px-16">
+    <section className="bg-terra-sand pt-16 px-16" id="contactanos">
       <div className="container flex flex-col">
         <h2 className="heading !font-medium text-center !text-forest-green mb-8">
           ¿Tienes un proyecto? <strong className="font-extrabold">Conversemos.</strong>

@@ -190,4 +190,8 @@ export const MENU = [
   },
 ];
 
-export const HOME_SLIDER = ["/home/slide-1.jpeg", "/home/slide-2.jpg"];
+export const HOME_SLIDER = [
+  { mobile: "/home/banner-mobile-01.jpg", desktop: "/home/banner-01.jpg" },
+  { mobile: "/home/banner-mobile-02.jpg", desktop: "/home/banner-02.jpg" },
+  { mobile: "/home/banner-mobile-03.jpg", desktop: "/home/banner-03.jpg" },
+];

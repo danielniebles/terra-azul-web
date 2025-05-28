@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Services = () => {
   return (
-    <section id="services" className="bg-forest-green mt-10">
+    <section id="servicios" className="bg-forest-green mt-10">
       <div className="container py-16">
         <h2 className="heading !font-medium mb-8 text-center">
           ¿En qué <strong className="font-extrabold">podemos ayudarte?</strong>
