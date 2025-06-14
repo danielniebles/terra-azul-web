@@ -4,8 +4,8 @@ const AboutUs = () => {
   return (
     <section id="nosotros" className="bg-mint-green">
       <div className="container !max-w-4xl double-grid ">
-        <article className="flex flex-col p-12 items-center">
-          <h2 className="heading !font-medium mb-8">
+        <article className="flex flex-col p-4 md:p-12 items-center">
+          <h2 className="heading !font-medium mb-8 mt-8 md:mt-0">
             ¿Quiénes <strong className="font-extrabold">somos?</strong>
           </h2>
           <p className="content !font-light">

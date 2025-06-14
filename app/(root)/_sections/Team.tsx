@@ -11,7 +11,7 @@ const Team = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 justify-self-center gap-8">
         {TEAM.map(({ name, position, imageUrl }) => (
           <div key={name} className="flex flex-col items-center">
-            <div className="relative w-72 h-72 mb-4">
+            <div className="relative w-52 h-52 md:w-72 md:h-72 mb-4">
               <Image
                 src={imageUrl} fill alt={`${name}-${position}`}
                 className="object-cover" />
