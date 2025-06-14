@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Team = () => {
   return (
-    <section id="team" className="container my-16">
+    <section id="team" className="container my-16 px-8 md:px-0">
       <h2 className="heading !font-medium !text-forest-green text-center mb-8">
         <strong className="font-extrabold">¡Nos encantará escucharte</strong><br />{" "}
         y estar contigo en cada paso!

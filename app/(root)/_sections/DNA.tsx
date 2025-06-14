@@ -8,7 +8,7 @@ const DNA = () => {
         ¿Por qué <strong className="font-extrabold">elegirnos?</strong> <br />{" "}
         Este es nuestro<strong className="font-extrabold"> ADN</strong>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-self-center gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-self-center gap-4 md:gap-12">
         {DNA_VALUES.map(({ title, subtitle, content, imageUrl }) => (
           <article className="flex flex-col p-4 max-w-96" key={title}>
             <figure className="flex justify-center mb-4">
@@ -21,11 +21,11 @@ const DNA = () => {
                 />
               </div>
             </figure>
-            <h3 className="heading !font-bold !text-forest-green">
+            <h3 className="heading text-center md:text-right !font-bold !text-forest-green">
               {title}
             </h3>
-            <p className="content !text-forest-green !font-bold">{subtitle}</p>
-            <p className="content !text-forest-green">{content}</p>
+            <p className="content text-center md:text-right !text-forest-green !font-bold">{subtitle}</p>
+            <p className="content text-center md:text-right !text-forest-green">{content}</p>
           </article>
         ))}
       </div>
