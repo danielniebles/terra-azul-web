@@ -193,7 +193,7 @@ export const MENU = [
 
 const BOTTOM_LEFT = 'bottom-0 left-1/2 transform -translate-x-1/2';
 const TOP_LEFT = 'top-0 left-1/2 transform -translate-x-1/2';
-const CENTER = 'top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-max';
+const CENTER = 'top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-max text-center';
 
 
 export const HOME_SLIDER = [
@@ -217,6 +217,7 @@ export const HOME_SLIDER = [
     </>),
     position: TOP_LEFT,
     color: "text-navy-blue",
+    smallText: true
   },
   {
     desktop: "/banner/desktop/banner-03.jpg", mobile: "/banner/mobile/banner-mobile-03.png",

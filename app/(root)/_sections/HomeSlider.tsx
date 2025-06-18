@@ -47,15 +47,15 @@ const HomeSlider = () => {
   return (
     <div className={`${lato.className} embla `} ref={emblaRef} id='home'>
       <div className="embla__container md:h-[60vh] h-[50vh] mt-[96px]">
-        {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white' }, index) => {
+        {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white', smallText = false }, index) => {
           const commonProps = { fill: true, alt: `slide-${index + 1}` }
           const { srcSet: srcDesktop, } = getImageProps({ ...commonProps, src: desktop }).props
           const { srcSet: srcMobile, ...rest } = getImageProps({ ...commonProps, src: mobile }).props
 
           return (
             <div className="embla__slide flex-shrink-0 w-full relative" key={index}>
-              <div className={`absolute w-full md:w-7xl flex justify-between items-end p-8 z-10 ${position}`}>
-                <p className={`${color} text-5xl md:text-6xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]`}>{text}</p>
+              <div className={`absolute w-full md:max-w-7xl flex justify-between items-end p-8 z-10 ${position}`}>
+                <p className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]`}>{text}</p>
               </div>
               <picture>
                 <source
