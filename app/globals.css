@@ -34,6 +34,9 @@ html {
   .text-orientation {
     @apply text-center md:text-left;
   }
+  .form-label {
+    @apply h-[36px] text-forest-green font-extrabold
+  }
 }
 
 .embla {

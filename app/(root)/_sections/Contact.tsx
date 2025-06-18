@@ -1,12 +1,9 @@
 import { SOCIALS } from "@/app/constants"
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image"
 import Link from "next/link"
 import { isMobileDevice } from "@/app/utils"
+import ContactForm from "@/components/ContactForm"
 
 const Contact = async () => {
   const isMobile = await isMobileDevice()
@@ -21,27 +18,7 @@ const Contact = async () => {
           Por eso, contamos con <strong className="font-extrabold">diversos canales de atención para responder</strong> <br />
           <strong className="font-extrabold">tus solicitudes </strong> de manera ágil, clara y adaptada a tus necesidades.</p>
         <div>
-          <form className="grid grid-cols-[0.7fr_auto_1fr] gap-4 py-12 px-8" action="">
-            <div />
-            <div className="hidden md:flex flex-col gap-4">
-              <Label className="h-[36px] text-forest-green font-extrabold" htmlFor="name">Nombre</Label>
-              <Label className="h-[36px] text-forest-green font-extrabold" htmlFor="email">Correo electrónico</Label>
-              <Label className="h-[36px] text-forest-green font-extrabold" htmlFor="phone">Teléfono</Label>
-              <Label className="h-[36px] text-forest-green font-extrabold" htmlFor="message">Mensaje</Label>
-            </div>
-            <div className="flex flex-col gap-4">
-              <Input placeholder={`${isMobile ? 'Nombre' : ''}`} className="bg-white" id="name" />
-              <Input placeholder={`${isMobile ? 'Correo Electrónico' : ''}`} className="bg-white" type="email" id="email" />
-              <Input placeholder={`${isMobile ? 'Teléfono' : ''}`} className="bg-white" type="phone" id="phone" />
-              <Textarea className="bg-white" id="message" />
-              <div className="flex items-center">
-                <Checkbox className="bg-white data-[state=checked]:bg-navy-blue data-[state=checked]:border-navy-blue" id="terms" />
-                <Label className="ml-2" htmlFor="terms">He leído y acepto la Política de Privacidad de Terra Azul</Label>
-              </div>
-              <p className="text-sm">En Terra Azul cuidamos tu información. Los datos que compartes con nosotros a través de este formulario serán tratados con responsabilidad y utilizados únicamente para brindarte un mejor servicio. Al marcar esta casilla, nos das tu consentimiento para ello. La información será almacenada en los servidores de Google. Puedes consultar su política de privacidad aquí. Recuerda que tienes derecho a acceder, modificar o eliminar tus datos cuando lo necesites.</p>
-              <Button className="w-fit bg-navy-blue hover:bg-navy-blue/90 self-end">Enviar</Button>
-            </div>
-          </form>
+          <ContactForm isMobile={isMobile} />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4 relative overflow-visible">
             <div className="relative h-[150px] md:h-[unset] overflow-visible hidden md:block">
               <Image
