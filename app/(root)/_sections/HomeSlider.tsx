@@ -6,6 +6,24 @@ import { useCallback } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import { HOME_SLIDER } from '@/app/constants'
+import localFont from "next/font/local";
+
+const lato = localFont({
+  src: [
+    {
+      path: '../../fonts/Lato-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: '../../fonts/Lato-Black.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+  ],
+  variable: '--font-latto',
+})
+
 
 const HomeSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -27,21 +45,18 @@ const HomeSlider = () => {
   )
   /* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" /> */
   return (
-    <div className="embla" ref={emblaRef} id='home'>
+    <div className={`${lato.className} embla `} ref={emblaRef} id='home'>
       <div className="embla__container md:h-[60vh] h-[50vh] mt-[96px]">
-        {HOME_SLIDER.map(({ mobile, desktop }, index) => {
+        {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white' }, index) => {
           const commonProps = { fill: true, alt: `slide-${index + 1}` }
           const { srcSet: srcDesktop, } = getImageProps({ ...commonProps, src: desktop }).props
           const { srcSet: srcMobile, ...rest } = getImageProps({ ...commonProps, src: mobile }).props
 
           return (
             <div className="embla__slide flex-shrink-0 w-full relative" key={index}>
-              {/*  <div className="absolute bottom-0 w-7xl left-1/2 transform -translate-x-1/2 flex justify-between items-end p-8">
-                <p className='text-white text-3xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'>¡Tú lo sueñas,
-                  <br /> nosotros lo hacemos
-                  <br /> así como lo imaginaste!</p>
-                <Button className="w-fit bg-navy-blue hover:bg-navy-blue/90">Cuéntanos tu sueño</Button>
-              </div> */}
+              <div className={`absolute w-full md:w-7xl flex justify-between items-end p-8 z-10 ${position}`}>
+                <p className={`${color} text-5xl md:text-6xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]`}>{text}</p>
+              </div>
               <picture>
                 <source
                   srcSet={srcMobile}
@@ -53,7 +68,7 @@ const HomeSlider = () => {
                   media="(min-width: 769px)"
                   type="image/jpeg"
                 />
-                <img  {...rest} className='object-cover md:object-contain max-w-8xl mx-auto h-full' alt='slide-1' />
+                <img  {...rest} className='object-cover max-w-8xl mx-auto h-full' alt='slide-1' />
               </picture>
             </div>
           )
