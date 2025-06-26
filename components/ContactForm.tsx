@@ -41,7 +41,7 @@ const ContactForm = ({ isMobile }: { isMobile: boolean }) => {
         <Input onChange={handleChange} className="bg-white" id="name" name="name" placeholder={`${isMobile ? 'Nombre' : ''}`} />
         <Input onChange={handleChange} className="bg-white" type="email" id="email" name="email" placeholder={`${isMobile ? 'Correo Electrónico' : ''}`} />
         <Input onChange={handleChange} className="bg-white" type="phone" id="phone" name="phone" placeholder={`${isMobile ? 'Teléfono' : ''}`} />
-        <Textarea onChange={handleChange} className="bg-white" id="message" name="message" />
+        <Textarea onChange={handleChange} className="bg-white" id="message" name="message" placeholder={`${isMobile ? 'Mensaje' : ''}`} />
         <div className="flex items-center">
           <Checkbox className="bg-white data-[state=checked]:bg-navy-blue data-[state=checked]:border-navy-blue"
             id="terms"

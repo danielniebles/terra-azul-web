@@ -14,7 +14,7 @@ const Services = () => {
               <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4">
                 <Image
                   src={icon} fill alt={title}
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <span className="text-center w-40 md:w-64 text-white font-bold text-md">{title}</span>

@@ -55,7 +55,7 @@ const HomeSlider = () => {
           return (
             <div className="embla__slide flex-shrink-0 w-full relative" key={index}>
               <div className={`absolute w-full md:max-w-7xl flex justify-between items-end p-8 z-10 ${position}`}>
-                <p className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]`}>{text}</p>
+                <p className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl`}>{text}</p>
               </div>
               <picture>
                 <source

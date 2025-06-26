@@ -47,43 +47,61 @@ export const ODS_GOALS: SDGGoal[] = [
   {
     number: 1,
     title: ["Fin de la", "pobreza"],
-    color: "#ea5163", // Red
+    color: "#ea5163",
     svgUrl: "/ods/ods-1.svg",
+  },
+  {
+    number: 5,
+    title: ["Igualdad", "de género"],
+    color: "#e74730",
+    svgUrl: "/ods/ods-8.svg",
+  },
+  {
+    number: 8,
+    title: ["Trabajo", "decente y", "crecimiento", "económico"],
+    color: "#b43842",
+    svgUrl: "/ods/ods-9.svg",
+  },
+  {
+    number: 9,
+    title: ["Industria,", "innovación e", "infraestructura"],
+    color: "#ea5631",
+    svgUrl: "/ods/ods-10.svg",
   },
   {
     number: 6,
     title: ["Agua limpia y", "saneamiento"],
-    color: "#4dbde3", // Light Blue
+    color: "#4dbde3",
     svgUrl: "/ods/ods-2.svg",
   },
   {
     number: 10,
     title: ["Reducción", "de las", "desigualdades"],
-    color: "#eb5599", // Magenta / Pink
+    color: "#eb5599",
     svgUrl: "/ods/ods-3.svg",
   },
   {
     number: 11,
     title: ["Ciudades y", "comunidades", "sostenibles"],
-    color: "#f39733", // Orange
+    color: "#f39733",
     svgUrl: "/ods/ods-4.svg",
   },
   {
     number: 12,
     title: ["Producción", "y consumo", "responsable"],
-    color: "#f39733", // Mustard yellow
+    color: "#f39733",
     svgUrl: "/ods/ods-5.svg",
   },
   {
     number: 13,
     title: ["Acción por", "el clima"],
-    color: "#408848", // Dark Green
+    color: "#408848",
     svgUrl: "/ods/ods-6.svg",
   },
   {
     number: 15,
     title: ["Vida de", "ecosistemas", "terrestres"],
-    color: "#55ae47", // Green
+    color: "#55ae47",
     svgUrl: "/ods/ods-7.svg",
   },
 ];
