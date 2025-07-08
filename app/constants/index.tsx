@@ -112,12 +112,7 @@ export const TEAM = [
     name: "Maribel Soler",
     position: "Gerente Comercial",
     imageUrl: "/team/maribel.webp",
-  },
-  {
-    name: "Marisol Duarte",
-    position: "Consultora Comercial",
-    imageUrl: "/team/marisol.webp",
-  },
+  }
 ];
 
 export const SERVICES = [
