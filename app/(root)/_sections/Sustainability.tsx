@@ -28,7 +28,7 @@ const Sustainability = () => {
           </div>
           <div className="grid grid-cols-2 py-8 md:py-0 md:p-0 md:grid-cols-4 gap-2">
             {ODS_GOALS.map(({ number, title, color, svgUrl }) => (
-              <div key={color} className="flex flex-col justify-center" style={{ backgroundColor: color }}>
+              <div key={number} className="flex flex-col justify-center" style={{ backgroundColor: color }}>
                 <header className="flex justify-center items-center gap-1">
                   <div className="text-4xl font-extrabold text-white leading-0 mt-2">{number}</div>
                   <div className="flex flex-col items-center uppercase

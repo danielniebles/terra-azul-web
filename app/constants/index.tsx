@@ -118,42 +118,123 @@ export const TEAM = [
 export const SERVICES = [
   {
     title: "Diseño y ejecución de proyectos arquitectónicos",
+    slug: "diseno-ejecucion-proyectos",
     icon: "/services/services-1.svg",
+    description:
+      "Convertimos tu visión en estructuras reales. Desde el diseño conceptual hasta la entrega de llaves, acompañamos cada etapa con precisión técnica y sensibilidad estética.",
   },
   {
     title: "Renovación de espacios",
+    slug: "renovacion-espacios",
     icon: "/services/services-2.svg",
+    description:
+      "Transformamos espacios existentes con intervenciones que maximizan la funcionalidad, la estética y el valor de tu propiedad, respetando su esencia original.",
   },
   {
     title: "Asesoría en normativa urbana y gestión social",
+    slug: "asesoria-normativa-urbana",
     icon: "/services/services-3.svg",
+    description:
+      "Navegamos contigo el marco regulatorio urbano, asegurando que cada proyecto cumpla la normativa vigente y genere un impacto positivo en la comunidad.",
   },
   {
     title: "Automatización y domótica",
+    slug: "automatizacion-domotica",
     icon: "/services/services-4.svg",
+    description:
+      "Integramos tecnología inteligente en tus espacios: control de iluminación, accesos, climatización y seguridad desde cualquier dispositivo, en cualquier lugar.",
   },
   {
     title: "Impermeabilización y trabajos en altura",
+    slug: "impermeabilizacion-trabajos-altura",
     icon: "/services/services-5.svg",
+    description:
+      "Protegemos tus estructuras con soluciones técnicas de impermeabilización e intervenimos de forma segura en trabajos de difícil acceso y gran altura.",
   },
   {
     title: "Señalización industrial",
+    slug: "senalizacion-industrial",
     icon: "/services/services-6.svg",
+    description:
+      "Diseñamos e instalamos sistemas de señalización que garantizan seguridad, orientación y cumplimiento normativo en entornos industriales y comerciales.",
   },
 ];
 
 export const PROJECTS = [
   {
     title: "Parroquia Jesucristo Redentor",
+    slug: "parroquia-jesucristo-redentor",
     imageUrl: "/projects/parroquia.webp",
+    category: "Arquitectura Religiosa",
+    year: "2023",
+    location: "Bogotá, Colombia",
+    description:
+      "Restauración y ampliación de un templo emblemático, integrando elementos contemporáneos que preservan la identidad espiritual y la riqueza arquitectónica del lugar.",
+    featured: true,
+    area: "850 m²",
+    executionTime: "14 meses",
+    budget: "Institucional",
+    challenge:
+      "La estructura original presentaba deterioro significativo y carecía de espacios adecuados para las actividades pastorales de una comunidad en crecimiento. El reto era intervenir sin alterar el carácter sagrado del lugar ni interrumpir los servicios religiosos durante la obra.",
+    intervention:
+      "Desarrollamos un plan por fases que mantuvo los servicios activos durante la construcción. Reforzamos la estructura existente, ampliamos la nave central y diseñamos un atrio contemporáneo que dialoga con la arquitectura original, incorporando luz natural como elemento espiritual central.",
+    sustainability: [
+      "Materiales de construcción de origen regional",
+      "Sistema de captación de aguas lluvias",
+      "Iluminación LED de bajo consumo en todo el recinto",
+    ],
+    quote:
+      "Cada espacio sagrado es una oportunidad para elevar el espíritu a través de la luz, la proporción y el silencio arquitectónico.",
   },
   {
     title: "Deloing Zona Franca",
+    slug: "deloing-zona-franca",
     imageUrl: "/projects/deloing.webp",
+    category: "Arquitectura Corporativa",
+    year: "2023",
+    location: "Bogotá, Colombia",
+    description:
+      "Diseño de espacios corporativos funcionales y eficientes en una de las zonas de mayor actividad empresarial de la capital colombiana.",
+    featured: false,
+    area: "2.400 m²",
+    executionTime: "10 meses",
+    budget: "Corporativo",
+    challenge:
+      "El cliente requería un espacio que reflejara la identidad de una empresa global, optimizando los flujos de trabajo y adaptando la infraestructura a los estándares internacionales de zona franca, sin interrumpir las operaciones del negocio durante la intervención.",
+    intervention:
+      "Diseñamos una distribución abierta con zonas modulares que permiten configuraciones flexibles. Incorporamos materiales de alta durabilidad y sistemas de climatización eficiente, logrando un ambiente que equilibra productividad y bienestar para los colaboradores.",
+    sustainability: [
+      "Sistemas de climatización de alta eficiencia energética",
+      "Fachadas con control solar integrado",
+      "Gestión certificada de residuos de construcción",
+    ],
+    quote:
+      "Los espacios corporativos más efectivos son aquellos que inspiran a quien trabaja en ellos, sin que lo perciban conscientemente.",
   },
   {
     title: "Diverplaza",
+    slug: "diverplaza",
     imageUrl: "/projects/diverplaza.webp",
+    category: "Diseño Comercial",
+    year: "2022",
+    location: "Bogotá, Colombia",
+    description:
+      "Concepto visual dinámico para un espacio de entretenimiento y comercio, maximizando la experiencia del visitante con un diseño atractivo y funcional.",
+    featured: false,
+    area: "3.800 m²",
+    executionTime: "6 meses",
+    budget: "Comercial",
+    challenge:
+      "El espacio necesitaba diferenciarse en un mercado saturado de propuestas comerciales convencionales, creando una experiencia memorable que incentivara la permanencia y el retorno de visitantes de distintos perfiles.",
+    intervention:
+      "Creamos un concepto de experiencia total que integra circulación lúdica, señalética de marca y materialidad contrastante. Cada zona fue diseñada para generar un estado de ánimo específico, guiando intuitivamente al visitante a través del recorrido comercial.",
+    sustainability: [
+      "Materiales reciclados en el 40% de los acabados",
+      "Iluminación LED con sensores de presencia",
+      "Áreas verdes integradas en corredores de circulación",
+    ],
+    quote:
+      "El comercio más exitoso no vende productos, vende experiencias. El diseño es el primer vendedor.",
   },
 ];
 
@@ -176,7 +257,7 @@ export const SOCIALS = [
   {
     name: "Facebook",
     icon: "/social/fb.svg",
-    link: "https://www.linkedin.com/company/arquitectonos/",
+    link: "https://www.facebook.com/company/arquitectonos/",
   },
 ];
 
