@@ -27,7 +27,7 @@ const HomeSlider = () => {
 
   return (
     <div className="font-[family-name:var(--font-plus-jakarta)] embla" ref={emblaRef} id='home'>
-      <div className="embla__container md:h-[60vh] h-[50vh] mt-[96px]">
+      <div className="embla__container md:h-[60vh] h-[50vh] mt-[64px]">
         {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white', smallText = false }, index) => {
           const commonProps = { fill: true, alt: '' }
           const { srcSet: srcDesktop } = getImageProps({ ...commonProps, src: desktop }).props
