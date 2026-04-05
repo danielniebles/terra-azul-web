@@ -34,15 +34,15 @@ const montserrat = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Terra Azul • Oficina de Arquitectura y Construcción',
-  description: 'Empresa del sector de la construcción, con amplia experiencia en diseño arquitectónico, diseño de stands, renovación de espacios, remodelaciones, construcción en seco - instalación de drywall, superboard-. Igualmente, prestamos servicios para la automatización de sistemas de acceso, insonorización de espacios, señalización y pintura de espacios industriales o comerciales con pinturas de alto tráfico.',
+  title: 'Terra Azul • Oficina de Arquitectura y Construcción en Bogotá',
+  description: 'Empresa de arquitectura y construcción en Bogotá. Diseño arquitectónico, renovación de espacios, impermeabilización, domótica y señalización industrial.',
   metadataBase: new URL('https://www.terraazul.co'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Terra Azul • Oficina de Arquitectura y Construcción",
-    description: "Empresa del sector de la construcción, con amplia experiencia en diseño arquitectónico, diseño de stands, renovación de espacios, remodelaciones, construcción en seco - instalación de drywall, superboard-. Igualmente, prestamos servicios para la automatización de sistemas de acceso, insonorización de espacios, señalización y pintura de espacios industriales o comerciales con pinturas de alto tráfico.",
+    description: "Empresa de arquitectura y construcción en Bogotá. Diseño arquitectónico, renovación de espacios, impermeabilización, domótica y señalización industrial.",
     url:  new URL('https://terraazul.co'),
     siteName: "Terra Azul",
     images: [
@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es-CO">
       <body
         className={`${montserrat.variable} antialiased`}
       >

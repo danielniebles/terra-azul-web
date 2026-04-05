@@ -13,7 +13,7 @@ const Team = () => {
           <div key={name} className="flex flex-col items-center">
             <div className="relative w-52 h-52 md:w-72 md:h-72 mb-4">
               <Image
-                src={imageUrl} fill alt={`${name}-${position}`}
+                src={imageUrl} fill alt={`${name}, ${position} en Terra Azul`}
                 className="object-cover" />
             </div>
             <span className="text-forest-green font-bold text-md">{name}</span>

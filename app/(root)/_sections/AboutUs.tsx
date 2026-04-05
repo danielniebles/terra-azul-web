@@ -18,7 +18,7 @@ const AboutUs = () => {
           <Image
             src="/nova/nova-show.png"
             fill
-            alt="Logo"
+            alt="Nova, mascota de Terra Azul"
             className="-rotate-y-180 object-cover overflow-visible"
           />
           </div>

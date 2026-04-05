@@ -11,12 +11,16 @@ const Contact = async () => {
   return (
     <section className="bg-terra-sand pt-16 md:px-16" id="contactanos">
       <div className="container flex flex-col">
-        <h2 className="heading !font-medium text-center !text-forest-green mb-8">
-          ¿Tienes un proyecto? <strong className="font-extrabold">Conversemos.</strong>
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-mint-green mb-3 text-center">
+          Hablemos
+        </p>
+        <h2 className="heading !font-medium text-center !text-forest-green mb-4">
+          Construyamos algo <strong className="font-extrabold">trascendental.</strong>
         </h2>
-        <p className="text-center text-forest-green px-8">En Terra Azul valoramos tu tiempo y confianza. <br />
-          Por eso, contamos con <strong className="font-extrabold">diversos canales de atención para responder</strong> <br />
-          <strong className="font-extrabold">tus solicitudes </strong> de manera ágil, clara y adaptada a tus necesidades.</p>
+        <p className="text-center text-forest-green/70 px-8 mb-2">
+          ¿Tienes un proyecto en mente? Nuestro equipo está listo para convertir
+          tu visión en una estructura habitable y consciente.
+        </p>
         <div>
           <ContactForm isMobile={isMobile} />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4 relative overflow-visible">
