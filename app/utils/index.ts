@@ -6,3 +6,9 @@ export async function isMobileDevice(): Promise<boolean> {
   const { device } = userAgent({ headers: headerList })
   return device.type === 'mobile' || device.type === 'tablet'
 }
+
+const IMAGEKIT_BASE = 'https://ik.imagekit.io/wbjodg09y/'
+
+export function serviceImageUrl(slug: string, filename: string): string {
+  return `${IMAGEKIT_BASE}/services/${slug}/${filename}`
+}

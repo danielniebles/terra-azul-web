@@ -132,7 +132,7 @@ export const SERVICES = [
       "Entrega con acta de obra y garantía post-construcción",
       "Coordinación de todas las especialidades (estructura, instalaciones, acabados)",
     ],
-    images: [] as string[],
+    images: ["atlantis-raso-desmonte.jpg", "atlantis-raso.jpg", "drywall.jpg", "pintura.jpg"] as string[],
   },
   {
     title: "Renovación de espacios",
@@ -150,7 +150,7 @@ export const SERVICES = [
       "Instalación de pisos, cielos rasos, carpintería y pintura",
       "Entrega con garantía de mano de obra y materiales",
     ],
-    images: [] as string[],
+    images: ["bbq-801.jpg", "cocina-513.jpeg", "cocina-801.JPG", "deloing-oficina-antes.JPG", "deloing-oficina-despues.JPG"] as string[],
   },
   {
     title: "Asesoría en normativa urbana y gestión social",
@@ -204,7 +204,7 @@ export const SERVICES = [
       "Personal certificado en trabajo seguro en alturas",
       "Garantía de impermeabilidad por escrito",
     ],
-    images: [] as string[],
+    images: ["impermeabilizacion.jpg", "obra-seca.jpg", "policarbonato-801.JPG"] as string[],
   },
   {
     title: "Señalización industrial",
@@ -222,7 +222,7 @@ export const SERVICES = [
       "Señalización de tráfico para plantas y bodegas",
       "Entrega con planos record y manual de mantenimiento",
     ],
-    images: [] as string[],
+    images: ["bodega-senalizacion-1.JPEG", "bodega-senalizacion-2.jpg", "bodega-senalizacion.jpeg"] as string[],
   },
 ];
 

@@ -2,6 +2,7 @@ import { SERVICES } from "@/app/constants"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, CheckCircle, Clock, Wrench } from "lucide-react"
+import { serviceImageUrl } from "@/app/utils"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -58,16 +59,28 @@ export default function ServiciosPage() {
                   isEven ? "md:flex-row" : "md:flex-row-reverse"
                 } gap-8 md:gap-16 items-center py-14 border-b border-gray-200 last:border-0`}
               >
-                {/* Icon panel */}
-                <div className="w-full md:w-1/2 bg-forest-green rounded-2xl flex items-center justify-center h-64 md:h-80 flex-shrink-0">
-                  <div className="relative w-28 h-28 md:w-36 md:h-36">
+                {/* Image panel — first photo if available, icon fallback */}
+                <div className="w-full md:w-1/2 rounded-2xl overflow-hidden h-64 md:h-80 flex-shrink-0 relative bg-forest-green">
+                  {service.images[0] ? (
                     <Image
-                      src={service.icon}
+                      src={serviceImageUrl(service.slug, service.images[0])}
                       fill
                       alt={service.title}
-                      className="object-contain brightness-0 invert"
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
-                  </div>
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <div className="relative w-28 h-28 md:w-36 md:h-36">
+                        <Image
+                          src={service.icon}
+                          fill
+                          alt={service.title}
+                          className="object-contain brightness-0 invert"
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Text */}

@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2, MapPin } from "lucide-react"
 import ServiceGallery from "@/components/ServiceGallery"
+import { serviceImageUrl } from "@/app/utils"
 import { Metadata } from "next"
 
 type Props = { params: Promise<{ slug: string }> }
@@ -16,6 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const service = SERVICES.find((s) => s.slug === slug)
   if (!service) return {}
+  const heroImage = service.images[0]
+    ? serviceImageUrl(service.slug, service.images[0])
+    : undefined
   return {
     title: `${service.title} en Bogotá | Terra Azul`,
     description: service.description,
@@ -23,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${service.title} | Terra Azul`,
       description: service.description,
+      ...(heroImage && { images: [{ url: heroImage }] }),
     },
   }
 }
@@ -32,24 +37,45 @@ export default async function ServicioPage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === slug)
   if (!service) notFound()
 
+  const heroImage = service.images[0]
+    ? serviceImageUrl(service.slug, service.images[0])
+    : null
+
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-gradient-to-br from-forest-green to-navy-blue py-24 overflow-hidden">
-        {/* Watermark */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 flex items-center justify-end pr-8 pointer-events-none select-none"
-        >
-          <div className="relative w-64 h-64 opacity-10">
+      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-forest-green to-navy-blue">
+        {/* Background image when available */}
+        {heroImage && (
+          <>
             <Image
-              src={service.icon}
+              src={heroImage}
               fill
-              alt=""
-              className="object-contain brightness-0 invert"
+              alt={service.title}
+              className="object-cover"
+              priority
             />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
+          </>
+        )}
+
+        {/* Watermark icon — only when no photo */}
+        {!heroImage && (
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 flex items-center justify-end pr-8 pointer-events-none select-none"
+          >
+            <div className="relative w-64 h-64 opacity-10">
+              <Image
+                src={service.icon}
+                fill
+                alt=""
+                className="object-contain brightness-0 invert"
+              />
+            </div>
           </div>
-        </div>
+        )}
+
         <div className="container px-4 relative">
           <Link
             href="/servicios"
@@ -72,7 +98,6 @@ export default async function ServicioPage({ params }: Props) {
       {/* ── Overview ── */}
       <section className="container px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Long description */}
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-mint-green mb-3">
               Cómo lo hacemos
@@ -85,7 +110,6 @@ export default async function ServicioPage({ params }: Props) {
             </p>
           </div>
 
-          {/* Benefits */}
           <div className="bg-slate-50 rounded-2xl p-8">
             <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-5">
               Lo que incluye
@@ -126,6 +150,7 @@ export default async function ServicioPage({ params }: Props) {
           images={service.images}
           serviceTitle={service.title}
           serviceIcon={service.icon}
+          serviceSlug={service.slug}
         />
       </section>
 
