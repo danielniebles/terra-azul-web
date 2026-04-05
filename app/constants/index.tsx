@@ -122,6 +122,17 @@ export const SERVICES = [
     icon: "/services/services-1.svg",
     description:
       "Convertimos tu visión en estructuras reales. Desde el diseño conceptual hasta la entrega de llaves, acompañamos cada etapa con precisión técnica y sensibilidad estética.",
+    longDescription:
+      "Nuestro proceso integral parte del levantamiento de necesidades y la definición del programa arquitectónico, pasando por el diseño conceptual, los planos de construcción y los permisos de obra, hasta la supervisión técnica en sitio y la entrega final. Trabajamos con herramientas de modelado BIM que nos permiten anticipar problemas, optimizar costos y garantizar que cada decisión de diseño sea técnicamente viable antes de ejecutarla.",
+    benefits: [
+      "Diseño conceptual y planos arquitectónicos completos",
+      "Gestión de licencias y permisos de construcción",
+      "Modelado BIM para visualización previa a la obra",
+      "Supervisión técnica durante toda la ejecución",
+      "Entrega con acta de obra y garantía post-construcción",
+      "Coordinación de todas las especialidades (estructura, instalaciones, acabados)",
+    ],
+    images: [] as string[],
   },
   {
     title: "Renovación de espacios",
@@ -129,6 +140,17 @@ export const SERVICES = [
     icon: "/services/services-2.svg",
     description:
       "Transformamos espacios existentes con intervenciones que maximizan la funcionalidad, la estética y el valor de tu propiedad, respetando su esencia original.",
+    longDescription:
+      "La renovación de espacios requiere un diagnóstico preciso del estado actual y una visión clara de lo que se quiere lograr. En Terra Azul evaluamos la estructura, las instalaciones y los acabados existentes para proponer intervenciones que generen el mayor impacto con el menor riesgo. Nos especializamos en cocinas, baños, espacios corporativos, locales comerciales y viviendas, aplicando materiales y soluciones contemporáneas que elevan la calidad del espacio sin necesidad de demoliciones innecesarias.",
+    benefits: [
+      "Diagnóstico estructural y de instalaciones previo a la intervención",
+      "Diseño de interiores con selección de materiales y acabados",
+      "Remodelación de cocinas, baños y espacios sociales",
+      "Adecuación de locales comerciales y oficinas",
+      "Instalación de pisos, cielos rasos, carpintería y pintura",
+      "Entrega con garantía de mano de obra y materiales",
+    ],
+    images: [] as string[],
   },
   {
     title: "Asesoría en normativa urbana y gestión social",
@@ -136,6 +158,17 @@ export const SERVICES = [
     icon: "/services/services-3.svg",
     description:
       "Navegamos contigo el marco regulatorio urbano, asegurando que cada proyecto cumpla la normativa vigente y genere un impacto positivo en la comunidad.",
+    longDescription:
+      "Entender y aplicar correctamente las normas urbanas es determinante para la viabilidad de cualquier proyecto constructivo. Nuestro equipo analiza el Plan de Ordenamiento Territorial (POT), los usos del suelo, los índices de construcción y las normas de sismo-resistencia aplicables a cada predio. Adicionalmente, acompañamos procesos de gestión social con comunidades y entidades públicas, facilitando la aprobación de proyectos que involucran impacto en el entorno urbano o social.",
+    benefits: [
+      "Análisis de norma urbana y viabilidad del predio",
+      "Elaboración y radicación de licencias de construcción",
+      "Gestión ante curadurías urbanas y entidades distritales",
+      "Consultoría en norma sismo-resistente (NSR-10)",
+      "Acompañamiento en procesos de socialización comunitaria",
+      "Conceptos técnicos y respuesta a requerimientos de entidades",
+    ],
+    images: [] as string[],
   },
   {
     title: "Automatización y domótica",
@@ -143,6 +176,17 @@ export const SERVICES = [
     icon: "/services/services-4.svg",
     description:
       "Integramos tecnología inteligente en tus espacios: control de iluminación, accesos, climatización y seguridad desde cualquier dispositivo, en cualquier lugar.",
+    longDescription:
+      "La domótica transforma cualquier inmueble en un espacio inteligente, eficiente y seguro. Diseñamos e instalamos sistemas integrados que centralizan el control de iluminación, climatización, acceso vehicular y peatonal, sistemas de alarma y videovigilancia. Trabajamos con plataformas abiertas y compatibles con los principales ecosistemas del mercado (Google Home, Amazon Alexa, Apple HomeKit), garantizando que la tecnología se adapte a tu estilo de vida y no al revés.",
+    benefits: [
+      "Automatización de iluminación por zonas y horarios",
+      "Control de accesos: puertas, portones y barreras vehiculares",
+      "Integración de cámaras de seguridad y alarmas",
+      "Control de climatización y gestión de energía",
+      "Compatibilidad con Google Home, Alexa y Apple HomeKit",
+      "Soporte técnico y mantenimiento preventivo",
+    ],
+    images: [] as string[],
   },
   {
     title: "Impermeabilización y trabajos en altura",
@@ -150,6 +194,17 @@ export const SERVICES = [
     icon: "/services/services-5.svg",
     description:
       "Protegemos tus estructuras con soluciones técnicas de impermeabilización e intervenimos de forma segura en trabajos de difícil acceso y gran altura.",
+    longDescription:
+      "Las filtraciones y humedades son una de las causas más frecuentes de deterioro estructural en edificaciones. En Terra Azul aplicamos sistemas de impermeabilización de alta tecnología para cubiertas, terrazas, sótanos, muros de contención y fachadas, usando membranas asfálticas, poliuretanos y recubrimientos cristalizantes según las condiciones de cada superficie. Para intervenciones en altura, contamos con personal certificado en trabajo en alturas y equipos de descenso controlado, garantizando la seguridad en cada operación.",
+    benefits: [
+      "Diagnóstico de filtraciones y humedad estructural",
+      "Impermeabilización de cubiertas planas e inclinadas",
+      "Tratamiento de sótanos, muros y fachadas",
+      "Aplicación de membranas asfálticas y poliuretanos",
+      "Personal certificado en trabajo seguro en alturas",
+      "Garantía de impermeabilidad por escrito",
+    ],
+    images: [] as string[],
   },
   {
     title: "Señalización industrial",
@@ -157,6 +212,17 @@ export const SERVICES = [
     icon: "/services/services-6.svg",
     description:
       "Diseñamos e instalamos sistemas de señalización que garantizan seguridad, orientación y cumplimiento normativo en entornos industriales y comerciales.",
+    longDescription:
+      "Una señalización adecuada no solo es una obligación legal; es una herramienta de seguridad que protege a las personas y activos de una organización. Diseñamos sistemas de señalización visual que integran normas NTC e ISO, señales de evacuación, identificación de riesgos, demarcación de áreas y señalización de tráfico interno para plantas industriales, bodegas, centros comerciales y edificios de oficinas. Cada proyecto incluye un diagnóstico de riesgos y un plano de señalización aprobado por el área de seguridad y salud en el trabajo.",
+    benefits: [
+      "Diagnóstico de riesgos y levantamiento de señalización existente",
+      "Diseño de sistema de señalización conforme NTC e ISO",
+      "Señales de evacuación, emergencia e identificación de riesgos",
+      "Demarcación de áreas y vías internas de circulación",
+      "Señalización de tráfico para plantas y bodegas",
+      "Entrega con planos record y manual de mantenimiento",
+    ],
+    images: [] as string[],
   },
 ];
 
@@ -265,6 +331,7 @@ export const MENU = [
   {
     name: "Inicio",
     link: "home",
+    href: "/",
   },
   {
     name: "Nosotros",
@@ -272,11 +339,11 @@ export const MENU = [
   },
   {
     name: "Servicios",
-    link: "servicios",
+    href: "/servicios",
   },
   {
     name: "Proyectos",
-    link: "proyectos",
+    href: "/proyectos",
   },
   {
     name: "Contáctanos",

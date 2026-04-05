@@ -12,9 +12,9 @@ export default function NavbarMobile() {
       <ul className={`flex absolute top-0 left-0 w-full bg-terra-sand transition-transform duration-500 ease-in-out
       flex-col items-center gap-4 h-auto p-4 ${isOpen ? 'transform -translate-y-0' : 'transform -translate-y-full'}`}>
         <>
-          {MENU.map(({ name, link }) => (
+          {MENU.map(({ name, link, href }) => (
             <li key={name}>
-              <a className="text-forest-green" href={`#${link}`}>{name}</a>
+              <a className="text-forest-green" href={href ?? `#${link}`}>{name}</a>
             </li>
           ))}
           <Button variant="ghost" className="absolute top-4 right-4" onClick={() => setIsOpen(false)}>

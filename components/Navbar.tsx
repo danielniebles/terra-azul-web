@@ -15,9 +15,9 @@ export default async function Navbar() {
           <Image src="/logo-terra.svg" width={250} height={300} alt="Logo" />
         </Link>
         <ul className="hidden md:flex gap-4 items-end h-full">
-          {MENU.map(({ name, link }) => (
+          {MENU.map(({ name, link, href }) => (
             <li key={name}>
-              <a className="text-forest-green" href={`#${link}`}>{name}</a>
+              <Link className="text-forest-green" href={href ?? `#${link}`}>{name}</Link>
             </li>
           ))}
         </ul>
