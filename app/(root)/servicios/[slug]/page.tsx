@@ -213,7 +213,7 @@ export default async function ServicioPage({ params }: Props) {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-forest-green py-14">
+      <section className="bg-navy-blue py-14">
         <div className="container px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-3">
             ¿Tienes un proyecto en mente?

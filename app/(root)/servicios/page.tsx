@@ -27,17 +27,22 @@ export default function ServiciosPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-slate-50 pt-16 pb-4">
-        <div className="container px-4">
+      <section className="relative bg-gradient-to-br from-navy-blue via-forest-green to-mint-green pt-24 pb-16 overflow-hidden">
+        {/* Subtle texture overlay */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-mint-green/20 via-transparent to-transparent pointer-events-none"
+        />
+        <div className="container px-4 relative">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-mint-green mb-4">
             Excelencia Técnica
           </p>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-forest-green leading-[1.05] mb-8 max-w-2xl">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-[1.05] mb-8 max-w-2xl">
             Nuestros<br />Servicios
           </h1>
           <div className="flex gap-4 items-stretch max-w-xl mb-4">
             <div className="w-1 bg-mint-green flex-shrink-0 rounded-full" />
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-white/70 leading-relaxed">
               En Terra Azul, fusionamos la precisión técnica con la visión
               arquitectónica. Nuestro enfoque multidisciplinario garantiza
               soluciones constructivas que perduran, desde el detalle interior
@@ -105,7 +110,7 @@ export default function ServiciosPage() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="bg-forest-green py-16">
+      <section className="bg-navy-blue py-16">
         <div className="container px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left */}
