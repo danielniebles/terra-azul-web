@@ -6,24 +6,7 @@ import { useCallback } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 import { HOME_SLIDER } from '@/app/constants'
-import localFont from "next/font/local";
 import Link from 'next/link'
-
-const lato = localFont({
-  src: [
-    {
-      path: '../../fonts/Lato-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../../fonts/Lato-Black.ttf',
-      weight: '700',
-      style: 'normal'
-    },
-  ],
-  variable: '--font-latto',
-})
 
 const HomeSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -43,7 +26,7 @@ const HomeSlider = () => {
   )
 
   return (
-    <div className={`${lato.className} embla`} ref={emblaRef} id='home'>
+    <div className="font-[family-name:var(--font-plus-jakarta)] embla" ref={emblaRef} id='home'>
       <div className="embla__container md:h-[60vh] h-[50vh] mt-[96px]">
         {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white', smallText = false }, index) => {
           const commonProps = { fill: true, alt: '' }
