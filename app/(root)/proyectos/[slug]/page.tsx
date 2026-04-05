@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, MapPin, CheckCircle2 } from "lucide-react"
 import { Metadata } from "next"
+import { breadcrumbSchema } from "@/lib/schema"
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -34,8 +35,18 @@ export default async function ProjectPage({ params }: Props) {
 
   const related = PROJECTS.filter((p) => p.slug !== project.slug)
 
+  const jsonLd = breadcrumbSchema([
+    { name: "Inicio", href: "/" },
+    { name: "Proyectos", href: "/proyectos" },
+    { name: project.title, href: `/proyectos/${project.slug}` },
+  ])
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── Hero ── */}
       <section className="relative h-[70vh] min-h-[480px] w-full">
         <Image

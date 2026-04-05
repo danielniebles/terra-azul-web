@@ -6,6 +6,7 @@ import Projects from "./_sections/Projects";
 import Services from "./_sections/Services";
 import Sustainability from "./_sections/Sustainability";
 import Team from "./_sections/Team";
+import { localBusinessSchema } from "@/lib/schema";
 /* import useEmblaCarousel from 'embla-carousel-react' */
 
 export default function Home() {
@@ -13,6 +14,10 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
+      />
       <HomeSlider />
       <AboutUs />
       <DNA />

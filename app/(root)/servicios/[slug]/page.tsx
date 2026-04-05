@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, MapPin } from "lucide-react"
 import ServiceGallery from "@/components/ServiceGallery"
 import { serviceImageUrl } from "@/app/utils"
 import { Metadata } from "next"
+import { serviceSchema, breadcrumbSchema } from "@/lib/schema"
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -41,8 +42,21 @@ export default async function ServicioPage({ params }: Props) {
     ? serviceImageUrl(service.slug, service.images[0])
     : null
 
+  const jsonLd = [
+    serviceSchema({ name: service.title, description: service.description, slug: service.slug }),
+    breadcrumbSchema([
+      { name: "Inicio", href: "/" },
+      { name: "Servicios", href: "/servicios" },
+      { name: service.title, href: `/servicios/${service.slug}` },
+    ]),
+  ]
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── Hero ── */}
       <section className="relative py-24 overflow-hidden bg-gradient-to-br from-forest-green to-navy-blue">
         {/* Background image when available */}

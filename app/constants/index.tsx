@@ -308,23 +308,18 @@ export const SOCIALS = [
   {
     name: "Tiktok",
     icon: "/social/tiktok.svg",
-    link: "https://twitter.com/Arquitectonos",
+    link: "https://www.tiktok.com/@terra.azul1",
   },
   {
     name: "Instagram",
     icon: "/social/ig.svg",
-    link: "https://www.instagram.com/arquitectonos/",
+    link: "https://www.instagram.com/terraazul.co/",
   },
   {
     name: "Linkedin",
     icon: "/social/in.svg",
-    link: "https://www.linkedin.com/company/arquitectonos/",
-  },
-  {
-    name: "Facebook",
-    icon: "/social/fb.svg",
-    link: "https://www.facebook.com/company/arquitectonos/",
-  },
+    link: "https://www.linkedin.com/in/terra-azul-8381a1106/",
+  }
 ];
 
 export const MENU = [
