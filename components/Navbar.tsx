@@ -9,7 +9,7 @@ export default async function Navbar() {
   const headerList = await headers()
   const { device } = userAgent({ headers: headerList });
   return (
-    <header className="fixed top-0 left-0 w-full pb-2 shadow-xl bg-terra-sand h-16 z-10">
+    <header className="fixed top-0 left-0 w-full pb-2 h-16 z-20 bg-white/60 backdrop-blur-xl border-b border-white/20">
       <nav className="flex relative md:max-w-7xl flex-between md:mx-auto items-center h-[inherit] p-4">
         <Link href="/">
           <Image src="/logo-terra.svg" width={200} height={200} alt="Logo" />

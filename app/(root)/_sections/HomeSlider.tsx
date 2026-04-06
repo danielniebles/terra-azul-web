@@ -27,7 +27,7 @@ const HomeSlider = () => {
 
   return (
     <div className="font-[family-name:var(--font-plus-jakarta)] embla" ref={emblaRef} id='home'>
-      <div className="embla__container md:h-[60vh] h-[50vh] mt-[64px]">
+      <div className="embla__container h-screen">
         {HOME_SLIDER.map(({ mobile, desktop, text, position, color = 'text-white', smallText = false }, index) => {
           const commonProps = { fill: true, alt: '' }
           const { srcSet: srcDesktop } = getImageProps({ ...commonProps, src: desktop }).props
@@ -36,44 +36,49 @@ const HomeSlider = () => {
 
           return (
             <div className="embla__slide flex-shrink-0 w-full relative" key={index}>
-              <div className={`absolute w-full md:max-w-7xl flex flex-col justify-end gap-4 p-8 z-10 ${position}`}>
-                {/* Eyebrow — only on first slide */}
-                {isFirst && (
-                  <span className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white/80 w-fit">
-                    <span className="w-2 h-2 rounded-full bg-mint-green inline-block" />
-                    Sustaining the Future
-                  </span>
-                )}
+              {/* Dark gradient overlay for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/25 to-black/65 z-[1]" />
 
-                {/* Headline — H1 on first slide, p on the rest */}
-                {isFirst ? (
-                  <h1 className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl`}>
-                    {text}
-                  </h1>
-                ) : (
-                  <p className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl`}>
-                    {text}
+              {isFirst ? (
+                /* ── First slide: full centered hero ── */
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.25em] text-white/60 mb-6">
+                    Estudio de Arquitectura de Vanguardia
                   </p>
-                )}
-
-                {/* CTAs — only on first slide */}
-                {isFirst && (
-                  <div className="flex flex-wrap gap-3 mt-2">
+                  <h1 className="font-extrabold leading-[1.05] mb-8">
+                    <span className="block text-white text-5xl md:text-7xl">
+                      Construyendo sueños,
+                    </span>
+                    <span className="block text-mint-green text-5xl md:text-7xl">
+                      transformando
+                    </span>
+                    <span className="block text-mint-green text-5xl md:text-7xl">
+                      realidades
+                    </span>
+                  </h1>
+                  <div className="flex flex-wrap gap-3 justify-center">
                     <Link
                       href="/proyectos"
-                      className="inline-flex items-center gap-2 bg-forest-green text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-forest-green/90 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 bg-white/15 border border-white/40 text-white text-sm font-bold px-6 py-3 rounded-lg hover:bg-white/25 hover:border-white/70 transition-colors duration-200 backdrop-blur-sm"
                     >
                       Explorar Proyectos →
                     </Link>
                     <Link
                       href="#nosotros"
-                      className="inline-flex items-center gap-2 border border-white/50 text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:border-white hover:bg-white/10 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 bg-forest-green/80 border border-forest-green text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-forest-green transition-colors duration-200"
                     >
                       Nuestra Visión
                     </Link>
                   </div>
-                )}
-              </div>
+                </div>
+              ) : (
+                /* ── Other slides: positioned text ── */
+                <div className={`absolute w-full md:max-w-7xl flex flex-col justify-end gap-4 p-8 z-10 ${position}`}>
+                  <p className={`${color} w-full ${smallText ? 'text-4xl' : 'text-5xl'} md:text-6xl`}>
+                    {text}
+                  </p>
+                </div>
+              )}
 
               <picture>
                 <source srcSet={srcMobile} media="(max-width: 768px)" type="image/jpeg" />

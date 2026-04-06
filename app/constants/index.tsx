@@ -348,7 +348,7 @@ export const MENU = [
 
 
 const BOTTOM_LEFT = 'bottom-0 left-1/2 transform -translate-x-1/2';
-const TOP_LEFT = 'top-0 left-1/2 transform -translate-x-1/2';
+//const TOP_LEFT = 'top-0 left-1/2 transform -translate-x-1/2';
 const CENTER = 'top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-max text-center';
 
 
@@ -371,7 +371,7 @@ export const HOME_SLIDER = [
       <br /> tu proyecto de principio a fin
       <br /> <strong>¡Déjalo en nuestras manos!</strong>
     </>),
-    position: TOP_LEFT,
+    position: CENTER,
     color: "text-navy-blue",
     smallText: true
   },
