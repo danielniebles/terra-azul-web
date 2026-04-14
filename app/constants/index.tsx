@@ -350,11 +350,12 @@ export const MENU = [
 const BOTTOM_LEFT = 'bottom-0 left-1/2 transform -translate-x-1/2';
 //const TOP_LEFT = 'top-0 left-1/2 transform -translate-x-1/2';
 const CENTER = 'top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-max text-center';
+const BOTTOM_RIGHT = 'bottom-5 right-0 transform text-end';
 
 
 export const HOME_SLIDER = [
   {
-    desktop: "/banner/desktop/banner-01.jpg", mobile: "/banner/mobile/banner-mobile-01.png",
+    desktop: "/banner/desktop/banner-05.png", mobile: "/banner/mobile/banner-mobile-05.png",
     text: (<>
       ¡Construyendo,
       <br /> <strong>sueños</strong>
@@ -365,22 +366,22 @@ export const HOME_SLIDER = [
     color: "text-white",
   },
   {
-    desktop: "/banner/desktop/banner-02.jpg", mobile: "/banner/mobile/banner-mobile-02.png",
+    desktop: "/banner/desktop/banner-06.png", mobile: "/banner/mobile/banner-mobile-06.png",
     text: (<>
       Asesoramos y gestionamos
       <br /> tu proyecto de principio a fin
       <br /> <strong>¡Déjalo en nuestras manos!</strong>
     </>),
-    position: CENTER,
-    color: "text-navy-blue",
+    position: BOTTOM_RIGHT,
+    color: "text-white",
     smallText: true
   },
   {
-    desktop: "/banner/desktop/banner-03.jpg", mobile: "/banner/mobile/banner-mobile-03.png",
+    desktop: "/banner/desktop/banner-07.png", mobile: "/banner/mobile/banner-mobile-07.png",
     text: (<>
-      <strong>¡El futuro del planeta nos importa!</strong>
+      <strong></strong>
     </>),
     position: CENTER,
     color: "text-white",
-  },
+  }
 ];

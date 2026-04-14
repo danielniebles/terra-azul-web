@@ -21,7 +21,7 @@ const PILLARS = [
 
 const AboutUs = () => {
   return (
-    <section id="nosotros" className="py-8 md:py-32 bg-[#eaf6f5] relative overflow-hidden">
+    <section id="nosotros" className="py-8 md:py-32 bg-[#B0CFA8] relative overflow-hidden">
       {/* Decorative skewed stripe */}
       <div
         aria-hidden="true"
